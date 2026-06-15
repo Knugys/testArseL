@@ -7,4 +7,4 @@
 
      STEG 2: Ersätt BUBBLE_CDN_URL nedan med den URL du fick.
 -->
-<script src="BUBBLE_CDN_URL/plugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Knugys/testArseL@main/dist/plugin.min.js""></script>
