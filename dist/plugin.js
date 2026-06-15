@@ -1,5 +1,5 @@
 "use strict";
-var ArsredovisningPlugin = (() => {
+(() => {
   var __create = Object.create;
   var __defProp = Object.defineProperty;
   var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -19,10 +19,6 @@ var ArsredovisningPlugin = (() => {
       throw mod = 0, e;
     }
   };
-  var __export = (target, all) => {
-    for (var name in all)
-      __defProp(target, name, { get: all[name], enumerable: true });
-  };
   var __copyProps = (to, from, except, desc) => {
     if (from && typeof from === "object" || typeof from === "function") {
       for (let key of __getOwnPropNames(from))
@@ -39,7 +35,6 @@ var ArsredovisningPlugin = (() => {
     isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
     mod
   ));
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
   // node_modules/pdfkit/js/pdfkit.standalone.js
   var require_pdfkit_standalone = __commonJS({
@@ -47046,13 +47041,6 @@ end`);
     }
   });
 
-  // src/plugin.ts
-  var plugin_exports = {};
-  __export(plugin_exports, {
-    generateReport: () => generateReport,
-    generateReportFromBase64: () => generateReportFromBase64
-  });
-
   // src/sieParser.ts
   var CP437_HIGH = {
     128: "\xC7",
@@ -48602,7 +48590,6 @@ tr.heading td{font-weight:bold}p{margin:.4em 0}
   if (typeof window !== "undefined") {
     window.ArsredovisningPlugin = { generateReport, generateReportFromBase64 };
   }
-  return __toCommonJS(plugin_exports);
 })();
 /*! Bundled license information:
 
